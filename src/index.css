@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@layer base {
+  body {
+    @apply bg-arcade-bg text-white font-pixel antialiased;
+  }
+}
+
+@layer components {
+  .btn-arcade {
+    @apply bg-arcade-neon text-black px-4 py-2 uppercase border-2 border-black shadow-pixel hover:translate-y-1 hover:shadow-pixel-sm transition-all active:translate-y-2 active:shadow-none font-bold text-xs;
+  }
+  
+  .btn-arcade-danger {
+    @apply bg-arcade-danger text-white px-4 py-2 uppercase border-2 border-black shadow-pixel hover:translate-y-1 hover:shadow-pixel-sm transition-all active:translate-y-2 active:shadow-none font-bold text-xs;
+  }
+
+  .card-arcade {
+    @apply bg-arcade-surface border-4 border-black p-4 shadow-pixel flex flex-col gap-4;
+  }
+}
+
+/* Custom scrollbar for pixel art feel */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-arcade-bg border-l-2 border-black;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-arcade-neon border-2 border-black;
+}
