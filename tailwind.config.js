@@ -7,15 +7,15 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'arcade': "url('/public/images/background.png')",
+        'arcade': "url('/images/background.png')",
       },
       fontFamily: {
         pixel: ['"Press Start 2P"', 'cursive'],
       },
       colors: {
         arcade: {
-          bg: '#1a1a58ff',
-          surface: '#16213e',
+          bg: '#25257cff',
+          surface: '#233360ff',
           neon: '#00f3ff',
           danger: '#ff003c',
           warning: '#ffea00',

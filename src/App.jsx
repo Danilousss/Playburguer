@@ -16,7 +16,7 @@ function App() {
 
   return (
     <CartProvider>
-      <div className="min-h-screen bg-arcade bg-cover bg-center bg-no-repeat text-white pb-20">
+      <div className="min-h-screen bg-arcade bg-cover bg-center bg-fixed text-white pb-20">
         <Header searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
 
         <main className="container mx-auto px-4 pt-12">
