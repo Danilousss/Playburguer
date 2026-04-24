@@ -3,6 +3,10 @@
 @import "tailwindcss";
 @config "../tailwind.config.js";
 
+@theme {
+  --background-image-arcade: url('/images/background.png');
+}
+
 @layer base {
   body {
     @apply bg-arcade-bg text-white font-pixel antialiased;

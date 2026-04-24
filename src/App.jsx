@@ -9,16 +9,16 @@ function App() {
   const [searchTerm, setSearchTerm] = useState('');
 
   // Filter products by search term
-  const filteredProducts = products.filter(p => 
+  const filteredProducts = products.filter(p =>
     p.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
     p.description.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   return (
     <CartProvider>
-      <div className="min-h-screen bg-arcade-bg text-white pb-20">
+      <div className="min-h-screen bg-arcade bg-cover bg-center bg-no-repeat text-white pb-20">
         <Header searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
-        
+
         <main className="container mx-auto px-4 pt-12">
           {/* Banner Hero */}
           <div className="mb-16 border-4 border-black p-8 bg-black relative overflow-hidden group">
